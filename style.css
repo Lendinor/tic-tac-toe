@@ -2,3 +2,7 @@
 svg{
   background-color: #291B2C;
 }
+
+button{
+  display: block;
+}

@@ -15,25 +15,177 @@ var blclicked = 0
 var bmclicked = 0
 var brclicked = 0
 
+function wincondition()
+{
+  var line = document.createElementNS(namespace, "line")
+  if(ulclicked == 1 && umclicked == 1 && urclicked == 1 || mlclicked == 1 && mclicked == 1 && mrclicked == 1 || blclicked == 1 && bmclicked == 1 && brclicked == 1 || ulclicked == 1 && mlclicked == 1 && blclicked == 1 || umclicked == 1 && mclicked == 1 && bmclicked == 1 || urclicked == 1 && mrclicked == 1 && brclicked == 1 || ulclicked == 1 && mclicked == 1 && brclicked == 1 || urclicked == 1 && mclicked == 1 && blclicked == 1)
+  {
+    if(ulclicked == 1 && umclicked == 1 && urclicked == 1)
+    {
+        line.setAttribute("x1", 50)
+        line.setAttribute("y1", 50)
+        line.setAttribute("x2", 250)
+        line.setAttribute("y2", 50)
+        line.setAttribute("stroke", "green")
+        line.setAttribute("stroke-width", 5)
+    } else if(mlclicked == 1 && mclicked == 1 && mrclicked == 1)
+        {
+          line.setAttribute("x1", 50)
+          line.setAttribute("y1", 150)
+          line.setAttribute("x2", 250)
+          line.setAttribute("y2", 150)
+          line.setAttribute("stroke", "green")
+          line.setAttribute("stroke-width", 5)
+        } else if(blclicked == 1 && bmclicked == 1 && brclicked == 1)
+        {
+          line.setAttribute("x1", 50)
+          line.setAttribute("y1", 250)
+          line.setAttribute("x2", 250)
+          line.setAttribute("y2", 250)
+          line.setAttribute("stroke", "green")
+          line.setAttribute("stroke-width", 5)
+        } else if(ulclicked == 1 && mlclicked == 1 && blclicked == 1)
+        {
+          line.setAttribute("x1", 50)
+          line.setAttribute("y1", 50)
+          line.setAttribute("x2", 50)
+          line.setAttribute("y2", 250)
+          line.setAttribute("stroke", "green")
+          line.setAttribute("stroke-width", 5)
+        } else if(umclicked == 1 && mclicked == 1 && bmclicked == 1)
+        {
+          line.setAttribute("x1", 150)
+          line.setAttribute("y1", 50)
+          line.setAttribute("x2", 150)
+          line.setAttribute("y2", 250)
+          line.setAttribute("stroke", "green")
+          line.setAttribute("stroke-width", 5)
+        } else if(urclicked == 1 && mrclicked == 1 && brclicked == 1)
+        {
+          line.setAttribute("x1", 250)
+          line.setAttribute("y1", 50)
+          line.setAttribute("x2", 250)
+          line.setAttribute("y2", 250)
+          line.setAttribute("stroke", "green")
+          line.setAttribute("stroke-width", 5)
+        } else if(ulclicked == 1 && mclicked == 1 && brclicked == 1)
+        {
+          line.setAttribute("x1", 50)
+          line.setAttribute("y1", 50)
+          line.setAttribute("x2", 250)
+          line.setAttribute("y2", 250)
+          line.setAttribute("stroke", "green")
+          line.setAttribute("stroke-width", 5)
+        } else if (urclicked == 1 && mclicked == 1 && blclicked == 1)
+        {
+          line.setAttribute("x1", 250)
+          line.setAttribute("y1", 50)
+          line.setAttribute("x2", 50)
+          line.setAttribute("y2", 250)
+          line.setAttribute("stroke", "green")
+          line.setAttribute("stroke-width", 5)
+        }
+    alert("Player 1 Wins")
+  }
+  else if(ulclicked == 2 && umclicked == 2 && urclicked == 2 || mlclicked == 2 && mclicked == 2 && mrclicked == 2 || blclicked == 2 && bmclicked == 2 && brclicked == 2 || ulclicked == 2 && mlclicked == 2 && blclicked == 2 ||umclicked == 2 && mclicked == 2 && bmclicked == 2 || urclicked == 2 && mrclicked == 2 && brclicked == 2 || ulclicked == 2 && mclicked == 2 && brclicked == 2 || urclicked == 2 && mclicked == 2 && blclicked == 2)
+    {
+      if(ulclicked == 2 && umclicked == 2 && urclicked == 2)
+      {
+          line.setAttribute("x1", 50)
+          line.setAttribute("y1", 50)
+          line.setAttribute("x2", 250)
+          line.setAttribute("y2", 50)
+          line.setAttribute("stroke", "green")
+          line.setAttribute("stroke-width", 5)
+      } else if(mlclicked == 2 && mclicked == 2 && mrclicked == 2)
+          {
+            line.setAttribute("x1", 50)
+            line.setAttribute("y1", 150)
+            line.setAttribute("x2", 250)
+            line.setAttribute("y2", 150)
+            line.setAttribute("stroke", "green")
+            line.setAttribute("stroke-width", 5)
+          } else if(blclicked == 2 && bmclicked == 2 && brclicked == 2)
+          {
+            line.setAttribute("x1", 50)
+            line.setAttribute("y1", 250)
+            line.setAttribute("x2", 250)
+            line.setAttribute("y2", 250)
+            line.setAttribute("stroke", "green")
+            line.setAttribute("stroke-width", 5)
+          } else if(ulclicked == 2 && mlclicked == 2 && blclicked == 2)
+          {
+            line.setAttribute("x1", 50)
+            line.setAttribute("y1", 50)
+            line.setAttribute("x2", 50)
+            line.setAttribute("y2", 250)
+            line.setAttribute("stroke", "green")
+            line.setAttribute("stroke-width", 5)
+          } else if(umclicked == 2 && mclicked == 2 && bmclicked == 2)
+          {
+            line.setAttribute("x1", 150)
+            line.setAttribute("y1", 50)
+            line.setAttribute("x2", 150)
+            line.setAttribute("y2", 250)
+            line.setAttribute("stroke", "green")
+            line.setAttribute("stroke-width", 5)
+          } else if(urclicked == 2 && mrclicked == 2 && brclicked == 2)
+          {
+            line.setAttribute("x1", 250)
+            line.setAttribute("y1", 50)
+            line.setAttribute("x2", 250)
+            line.setAttribute("y2", 250)
+            line.setAttribute("stroke", "green")
+            line.setAttribute("stroke-width", 5)
+          } else if(ulclicked == 2 && mclicked == 2 && brclicked == 2)
+          {
+            line.setAttribute("x1", 50)
+            line.setAttribute("y1", 50)
+            line.setAttribute("x2", 250)
+            line.setAttribute("y2", 250)
+            line.setAttribute("stroke", "green")
+            line.setAttribute("stroke-width", 5)
+          } else if (urclicked == 2 && mclicked == 2 && blclicked == 2)
+          {
+            line.setAttribute("x1", 250)
+            line.setAttribute("y1", 50)
+            line.setAttribute("x2", 50)
+            line.setAttribute("y2", 250)
+            line.setAttribute("stroke", "green")
+            line.setAttribute("stroke-width", 5)
+          }
+               alert("Player 2 Wins")
+    }
+            canvas.appendChild(line)
+}
+
 function stuff()
 {
   if(ulclicked == 1 || umclicked == 1 || urclicked == 1 || mlclicked == 1 || mclicked == 1 || mrclicked == 1 || blclicked == 1 || bmclicked == 1 || brclicked == 1)
   {
     alert("This space is already filled. Please choose another.")
   }
+  if(ulclicked == 2 || umclicked == 2 || urclicked == 2 || mlclicked == 2 || mclicked == 2 || mrclicked == 2 || blclicked == 2 || bmclicked == 2 || brclicked == 2)
+  {
+    alert("This space is already filled. Please choose another.")
+  }
+
 }
-
-
-
 
 function reset()
 {
- if(currentPlayer == 1)
- {
-   currentPlayer = 0
- }else
+  location.reload(true)
+}
+
+function skipTurn()
+{
+  if(currentPlayer == 1)
   {
-    currentPlayer = 2
+    currentPlayer =2
+  }
+  else if(currentPlayer == 2)
+  {
+    currentPlayer = 1
   }
 }
 
@@ -55,22 +207,22 @@ if(ulclicked == 0)
       currentPlayer = 2
     }else if(currentPlayer == 2)
     {
-      var rect = document.createElementNs(namespace, "rect")
-      rect.setAttribute("x", 50)
-      rect.setAttribute("y", 50)
-      rect.setAttribute("height", 50)
-      rect.setAttribute("width", 50)
-      rect.setAttribute("fill", "blue")
-      rect.setAttribute("onclick", "stuff()")
-      canvas.appendChild(rect)
+      var circle2 = document.createElementNS(namespace, "circle")
+        circle2.setAttribute("cx", 50)
+        circle2.setAttribute("cy", 50)
+        circle2.setAttribute("r", 25)
+        circle2.setAttribute("fill", "blue")
+        circle2.setAttribute("onclick", "stuff()")
+        canvas.appendChild(circle2)
 
-      ulclicked = 1
+      ulclicked = 2
       currentPlayer = 1
     }
  }else
  {
    alert("This space is already filled. Please choose another.")
  }
+ wincondition()
 }
 
 function um()
@@ -91,23 +243,22 @@ function um()
         currentPlayer = 2
       }else if(currentPlayer == 2)
       {
-        var rect = document.createElementNs(namespace, "rect")
-        rect.setAttribute("x", 150)
-        rect.setAttribute("y", 50)
-        rect.setAttribute("height", 50)
-        rect.setAttribute("width", 50)
-        rect.setAttribute("fill", "blue")
-        rect.setAttribute("onclick", "stuff()")
-        canvas.appendChild(rect)
+        var circle2 = document.createElementNS(namespace, "circle")
+          circle2.setAttribute("cx", 150)
+          circle2.setAttribute("cy", 50)
+          circle2.setAttribute("r", 25)
+          circle2.setAttribute("fill", "blue")
+          circle2.setAttribute("onclick", "stuff()")
+          canvas.appendChild(circle2)
 
-        umclicked = 1
+        umclicked = 2
         currentPlayer = 1
       }
    }else
    {
      alert("This space is already filled. Please choose another.")
    }
-
+wincondition()
 }
 
 function ur()
@@ -128,23 +279,22 @@ function ur()
         currentPlayer = 2
       }else if(currentPlayer == 2)
       {
-        var rect = document.createElementNs(namespace, "rect")
-        rect.setAttribute("x", 250)
-        rect.setAttribute("y", 50)
-        rect.setAttribute("height", 50)
-        rect.setAttribute("width", 50)
-        rect.setAttribute("fill", "blue")
-        rect.setAttribute("onclick", "stuff()")
-        canvas.appendChild(rect)
+        var circle2 = document.createElementNS(namespace, "circle")
+          circle2.setAttribute("cx", 250)
+          circle2.setAttribute("cy", 50)
+          circle2.setAttribute("r", 25)
+          circle2.setAttribute("fill", "blue")
+          circle2.setAttribute("onclick", "stuff()")
+          canvas.appendChild(circle2)
 
-        urclicked = 1
+        urclicked = 2
         currentPlayer = 1
       }
    }else
    {
      alert("This space is already filled. Please choose another.")
    }
-
+wincondition()
 }
 
 function ml()
@@ -165,23 +315,22 @@ function ml()
         currentPlayer = 2
       }else if(currentPlayer == 2)
       {
-        var rect = document.createElementNs(namespace, "rect")
-        rect.setAttribute("x", 50)
-        rect.setAttribute("y", 150)
-        rect.setAttribute("height", 50)
-        rect.setAttribute("width", 50)
-        rect.setAttribute("fill", "blue")
-        rect.setAttribute("onclick", "stuff()")
-        canvas.appendChild(rect)
+        var circle2 = document.createElementNS(namespace, "circle")
+          circle2.setAttribute("cx", 50)
+          circle2.setAttribute("cy", 150)
+          circle2.setAttribute("r", 25)
+          circle2.setAttribute("fill", "blue")
+          circle2.setAttribute("onclick", "stuff()")
+          canvas.appendChild(circle2)
 
-        mlclicked = 1
+        mlclicked = 2
         currentPlayer = 1
       }
    }else
    {
      alert("This space is already filled. Please choose another.")
    }
-
+wincondition()
 }
 
 function m()
@@ -202,22 +351,22 @@ function m()
         currentPlayer = 2
       }else if(currentPlayer == 2)
       {
-        var rect = document.createElementNs(namespace, "rect")
-        rect.setAttribute("x", 150)
-        rect.setAttribute("y", 150)
-        rect.setAttribute("height", 50)
-        rect.setAttribute("width", 50)
-        rect.setAttribute("fill", "blue")
-        rect.setAttribute("onclick", "stuff()")
-        canvas.appendChild(rect)
+        var circle2 = document.createElementNS(namespace, "circle")
+          circle2.setAttribute("cx", 150)
+          circle2.setAttribute("cy", 150)
+          circle2.setAttribute("r", 25)
+          circle2.setAttribute("fill", "blue")
+          circle2.setAttribute("onclick", "stuff()")
+          canvas.appendChild(circle2)
 
-        mclicked = 1
+        mclicked = 2
         currentPlayer = 1
       }
    }else
    {
      alert("This space is already filled. Please choose another.")
    }
+   wincondition()
 }
 
 function mr()
@@ -238,22 +387,22 @@ function mr()
         currentPlayer = 2
       }else if(currentPlayer == 2)
       {
-        var rect = document.createElementNs(namespace, "rect")
-        rect.setAttribute("x", 250)
-        rect.setAttribute("y", 150)
-        rect.setAttribute("height", 50)
-        rect.setAttribute("width", 50)
-        rect.setAttribute("fill", "blue")
-        rect.setAttribute("onclick", "stuff()")
-        canvas.appendChild(rect)
+        var circle2 = document.createElementNS(namespace, "circle")
+          circle2.setAttribute("cx", 250)
+          circle2.setAttribute("cy", 150)
+          circle2.setAttribute("r", 25)
+          circle2.setAttribute("fill", "blue")
+          circle2.setAttribute("onclick", "stuff()")
+          canvas.appendChild(circle2)
 
-        mrclicked = 1
+        mrclicked = 2
         currentPlayer = 1
       }
    }else
    {
      alert("This space is already filled. Please choose another.")
    }
+   wincondition()
 }
 
 function bl()
@@ -274,22 +423,22 @@ function bl()
         currentPlayer = 2
       }else if(currentPlayer == 2)
       {
-        var rect = document.createElementNs(namespace, "rect")
-        rect.setAttribute("x", 50)
-        rect.setAttribute("y", 250)
-        rect.setAttribute("height", 50)
-        rect.setAttribute("width", 50)
-        rect.setAttribute("fill", "blue")
-        rect.setAttribute("onclick", "stuff()")
-        canvas.appendChild(rect)
+        var circle2 = document.createElementNS(namespace, "circle")
+          circle2.setAttribute("cx", 50)
+          circle2.setAttribute("cy", 250)
+          circle2.setAttribute("r", 25)
+          circle2.setAttribute("fill", "blue")
+          circle2.setAttribute("onclick", "stuff()")
+          canvas.appendChild(circle2)
 
-        blclicked = 1
+        blclicked = 2
         currentPlayer = 1
       }
    }else
    {
      alert("This space is already filled. Please choose another.")
    }
+   wincondition()
 }
 
 function bm()
@@ -310,22 +459,22 @@ function bm()
         currentPlayer = 2
       }else if(currentPlayer == 2)
       {
-        var rect = document.createElementNs(namespace, "rect")
-        rect.setAttribute("x", 150)
-        rect.setAttribute("y", 250)
-        rect.setAttribute("height", 50)
-        rect.setAttribute("width", 50)
-        rect.setAttribute("fill", "blue")
-        rect.setAttribute("onclick", "stuff()")
-        canvas.appendChild(rect)
+        var circle2 = document.createElementNS(namespace, "circle")
+          circle2.setAttribute("cx", 150)
+          circle2.setAttribute("cy", 250)
+          circle2.setAttribute("r", 25)
+          circle2.setAttribute("fill", "blue")
+          circle2.setAttribute("onclick", "stuff()")
+          canvas.appendChild(circle2)
 
-        bmclicked = 1
+        bmclicked = 2
         currentPlayer = 1
       }
    }else
    {
      alert("This space is already filled. Please choose another.")
    }
+   wincondition()
 }
 
 function br()
@@ -346,20 +495,20 @@ function br()
         currentPlayer = 2
       }else if(currentPlayer == 2)
       {
-        var rect = document.createElementNs(namespace, "rect")
-        rect.setAttribute("x", 250)
-        rect.setAttribute("y", 250)
-        rect.setAttribute("height", 50)
-        rect.setAttribute("width", 50)
-        rect.setAttribute("fill", "blue")
-        rect.setAttribute("onclick", "stuff()")
-        canvas.appendChild(rect)
+        var circle2 = document.createElementNS(namespace, "circle")
+          circle2.setAttribute("cx", 250)
+          circle2.setAttribute("cy", 250)
+          circle2.setAttribute("r", 25)
+          circle2.setAttribute("fill", "blue")
+          circle2.setAttribute("onclick", "stuff()")
+          canvas.appendChild(circle2)
 
-        brclicked = 1
+        brclicked = 2
         currentPlayer = 1
       }
    }else
    {
      alert("This space is already filled. Please choose another.")
    }
+   wincondition()
 }
